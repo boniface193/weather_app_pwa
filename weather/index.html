@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#0d47a1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Weather App | Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet"> -->
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/images/cloud-full_width192.png">
+</head>
+
+<body>
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark bg-primary">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#"><i class="fas fa-cloud fa-2x"></i></a>
+        <div class="container">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Type your City..." name="city"
+                    aria-label="Search" required id="form-control">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- <div style="height: 10vh;">hello</div> -->
+
+    <div class="d-flex mt-5 justify-content-center" id="alert">
+    </div>
+
+    <!-- <div class=""> -->
+        <div class="container-fluid">
+            <div class="text-center text-white h1 my-4 text-capitalize" id="cityName"></div>
+            <div class="card text-white mb-3" id="card">
+                <div class="container-fluid">
+                    <div class="row py-3">
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="lat">latitude</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="long">longitude</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="temp">temperature</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="humidity">humidity</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="wind">wind</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>windy</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <p class="country">country</p>
+                            <hr>
+                            <p class="state">state</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="des">weather Description</p>
+                            <hr>
+                            <p class="des-cloud">Description</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="clouds">cloud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"
+        integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg=="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/sw_main.js"></script>
+    <script src="sw.js"></script>
+
+
+    </script>
+</body>
+
+</html>
